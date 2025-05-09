@@ -3,79 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Presentación del Grupo</title>
+  <meta name="description" content="Presentación del Grupo">
+  <title>Lababoratorio 3</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- PRESENTACIÓN -->
-  <div class="card" id="presentationCard">
-    <div class="header" onclick="toggleCard('presentationCard')">Presentación del grupo</div>
-    <div class="content">
-      <div class="participant">
-        <div class="member" onclick="toggleDescription('desc1')">
-          <div class="member-name"><!-- mario zuñiga --></div>
-          <div id="desc1" class="description"><!-- soy de la localidad de viedma, actuamente estudio la carrera   tecnicatura en administracion de sistema y software libre en el comahue --></div>
-        </div>
-        <div class="member" onclick="toggleDescription('desc2')">
-          <div class="member-name">Agustín Guzman</div>
-          <div id="desc2" class="description">tengo 24 años, soy de Ingeniero Jacobacci, estoy estudiando la carrera Tecnicatura en Administracion en Sistema y Software Libre</div>
-        </div>
-        <div class="member" onclick="toggleDescription('desc3')">
-          <div class="member-name"><!-- Agregar Nombre --></div>
-          <div id="desc3" class="description"><!-- Agregar Descripcion --></div>
-        </div>
-        <div class="member" onclick="toggleDescription('desc4')">
-          <div class="member-name"><!-- Agregar Nombre --></div>
-          <div id="desc4" class="description"><!-- Agregar Descripcion --></div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- NAVEGACIÓN -->
+  <header>
+    <h1>Lababoratorio 3</h1>
+    <nav>
+      <ul>
+        <li><a href="licencia.html">Licencias Creative Commons</a></li>
+        <li><a href="participante.html">Participantes</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- LICENCIAS -->
-  <div class="card" id="licensesCard">
-    <div class="header" onclick="toggleCard('licensesCard')">Licencias</div>
-    <div class="content">
-      <body>
-        <main>
-        <h2>Licencias Creative Commons</h2>
-        <p> Las licencias Creative Commons permiten a los autores compartir sus obras bajo
-            ciertas condiciones sin renunciar al copyright.
-        </p>
-        <ul>
-            <li>Atribucion (by): Se debe reconocer al autor.</li>
-            <li>No comercial (nc): Solo se permite uso no comercial.</li>
-            <li>Sin obras derivadas (nd): No se pueden crear obras derivadas.</li>
-            <li>Compartir igual (sa): Las obras derivadas deben tener la misma licencia.</li>
-        </ul>
-        <p>
-            Estas condiciones generan seis tipos de licencias
-        </p>
-        <ul>
-            <li>by: uso libre, incluso comercial y con obras derivadas.</li>
-            <li>by-sa: uso libre y comercial, pero las obras derivadsa deben tener la misma licencia.</li>
-            <li>by-nc: Solo uso no comercial, permite obras derivadas.</li>
-            <li>by-nc-sa: No comercial y las obras derivadas deben compartir la misma licencia.</li>
-            <li>by-nd: Uso comercial permitido, pero sin obras derivadas.</li>
-            <li>by-nc-nd: Solo uso no comercial y sin obras derivadas (mas cercana al copyright)</li>
-        </ul>
-        <p>
-            <!-- Agregar Info -->
-        </p>
-        <ul>
-            <li><!-- Agregar Info --></li>
-            <li><!-- Agregar Info --></li>
-            <li><!-- Agregar Info --></li>
-        </ul>
-        <p><!-- Agregar Info --></p>
-        </main>
-    </div>
-  </div>
+  <!-- LOGO -->
+  <main>
+    <img id="logo1" src="Logo/logo_CURZA.png" alt="Logo CURZA" />
+  </main>
 
-   <main>
-        <img id="logo1" src="Logo/logo_CURZA.png" />
-    </main>
+  <!-- FOOTER -->
+  <footer>
+    <a onclick="window.history.back()" class="navButton flecha">&larr;</a>
+    <a href="index.html" class="navButton">Inicio</a>
+    <a onclick="window.history.forward()" class="navButton flecha">&rarr;</a>
+  </footer>
 
   <script>
     function toggleCard(id) {

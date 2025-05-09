@@ -1,96 +1,134 @@
+/* Tipografía general */
 body {
+  font-family: 'EB Garamond', serif;
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #d5d8dc;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 80px 20px;
+  padding: 0;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
 }
 
+/* Encabezado */
+header {
+  background-color: #002147;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 4px solid #0055a5;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Tarjetas académicas */
 .card {
   background-color: white;
-  width: 350px;
-  border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  overflow: hidden;
-  margin-bottom: 20px;
-  transition: all 0.3s ease;
+  border: 1px solid #ccc;
+  border-left: 6px solid #0055a5;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-.header {
-  padding: 60px;
-  background-color: #273746;
-  color: white;
-  font-size: 24px;
+.card .header {
+  font-size: 1.3rem;
   font-weight: bold;
-  text-align: center;
+  padding: 15px 20px;
+  background-color: #e8eef5;
   cursor: pointer;
 }
 
-.content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
+.card .content {
+  padding: 20px;
+  display: none;
 }
 
 .card.open .content {
-  max-height: 5000px;
-  padding: 60px;
-}
-
-#logo1 {
   display: block;
-  background-size: 150px auto;
-  background-position: center;
-  margin: 45px auto;
-  max-width: 55%;
 }
 
-.member-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
+/* Participantes */
+.participant {
+  list-style: none;
+  padding: 0;
 }
 
 .member {
-  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
   cursor: pointer;
 }
 
-.member img {
-  width: 100%;
-  border-radius: 15px;
-  height: auto;
-  object-fit: contain;
-  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
-}
-
-.member img:hover {
-  transform: scale(1.03);
-}
-
 .member-name {
-  margin-top: 8px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .description {
-  font-size: 14px;
-  margin-top: 6px;
-  color: #444;
+  margin-top: 5px;
   display: none;
-  transition: opacity 0.3s ease;
+  font-style: italic;
+  color: #555;
 }
 
 .description.show {
   display: block;
 }
 
-.text-block {
-  font-size: 15px;
-  line-height: 1.5;
-  color: #333;
+/* Imágenes */
+img.center, #logo1 {
+  display: block;
+  margin: 30px auto;
+  max-width: 150px;
 }
-  
+
+/* Pie de página */
+footer {
+  background-color: #002147;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 148px;
+}
+
+.navButton {
+  background-color: #0055a5;
+  color: white;
+  padding: 8px 14px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navButton:hover {
+  background-color: #003f7d;
+}

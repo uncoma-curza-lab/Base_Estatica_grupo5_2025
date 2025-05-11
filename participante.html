@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <h1>Participantes del Proyecto</h1>
@@ -27,11 +29,13 @@
         <ul class="participant">
           <li class="member" onclick="toggleDescription('p1')">
             <div class="member-name">mario zuñiga</div>
-            <div id="p1" class="description">soy de la localidad de viedma, actuamente estudio la carrera   tecnicatura en administracion de sistema y software libre en el comahue</div>
+            <div id="p1" class="description">soy de la localidad de viedma, actuamente estudio la carrera tecnicatura en
+              administracion de sistema y software libre en el comahue</div>
           </li>
           <li class="member" onclick="toggleDescription('p2')">
             <div class="member-name">Agustín Guzman</div>
-            <div id="p2" class="description">Tengo 24 años, soy de Ingeniero Jacobacci, estudio Tecnicatura en Administración de Sistemas y Software Libre.</div>
+            <div id="p2" class="description">Tengo 24 años, soy de Ingeniero Jacobacci, estudio Tecnicatura en
+              Administración de Sistemas y Software Libre.</div>
           </li>
           <li class="member" onclick="toggleDescription('p3')">
             <div class="member-name">Participante 3</div>
@@ -44,19 +48,6 @@
         </ul>
       </div>
     </div>
-  </main>
-
-  <footer>
-    <a onclick="window.history.back()" class="navButton flecha">&larr;</a>
-    <a href="index.html" class="navButton">Inicio</a>
-    <a onclick="window.history.forward()" class="navButton flecha">&rarr;</a>
-  </footer>
-
-  <script>
-    function toggleDescription(id) {
-      const desc = document.getElementById(id);
-      desc.classList.toggle("show");
-    }
-  </script>
 </body>
+
 </html>

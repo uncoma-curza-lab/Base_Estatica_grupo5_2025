@@ -1,6 +1,6 @@
 /* Tipografía general */
 body {
-  font-family: 'EB Garamond', serif;
+  font-family: 'Poppins', 'EB Garamond', serif;
   margin: 0;
   padding: 0;
   background-color: #f4f6f9;
@@ -55,7 +55,7 @@ main {
   border-left: 6px solid #0055a5;
   border-radius: 5px;
   margin-bottom: 25px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .card .header {
@@ -103,10 +103,11 @@ main {
 }
 
 /* Imágenes */
-img.center, #logo1 {
+img.center,
+#logo1 {
   display: block;
-  margin: 30px auto;
-  max-width: 150px;
+  margin: 20px auto;
+  max-width: 175px;
 }
 
 /* Pie de página */

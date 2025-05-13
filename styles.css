@@ -117,6 +117,9 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 148px;
+  image-orientation: right;
+  image-rendering: optimizeQuality;
+  image-resolution: 10px;
 }
 
 .navButton {
@@ -133,3 +136,4 @@ footer {
 .navButton:hover {
   background-color: #003f7d;
 }
+
